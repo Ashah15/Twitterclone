@@ -10,32 +10,58 @@
       <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= f.error_notification %>
  
+  <div class="field">
+    <div class="form-inputs">
+      <%= f.input :Firstname,
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: "firstname" }%>
+    </div>
+  </div>
 
-  <div class="form-inputs">
-    <%= f.input :Firstname,
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "firstname" }%>
-    <%= f.input :Lastname,
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "lastname" }%>
-    <%= f.input :username,
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "username" }%>
-    <%= f.input :email,
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "email" }%>
-    <%= f.input :password,
-                required: true,
-                hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                input_html: { autocomplete: "new-password" } %>
-    <%= f.input :password_confirmation,
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "new-password" } %>
+  <div class="field">
+    <div class="form-inputs">
+      <%= f.input :Lastname,
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: "lastname" }%>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="form-inputs">
+      <%= f.input :username,
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: "username" }%>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="form-inputs">
+      <%= f.input :email,
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: "email" }%>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="form-inputs">
+      <%= f.input :password,
+                  required: true,
+                  hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
+                  input_html: { autocomplete: "new-password" } %>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="form-inputs">
+      <%= f.input :password_confirmation,
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: "new-password" } %>
+    </div>
   </div>
 
   <div class="Field">
