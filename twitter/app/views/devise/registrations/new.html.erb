@@ -12,13 +12,21 @@
  
   <div class="field">
     <div class="form-inputs">
-      <%= f.input :Name,
+      <%= f.input :Firstname,
                   required: true,
                   autofocus: true,
                   input_html: { autocomplete: "name" }%>
     </div>
   </div>
 
+  <div class="field">
+    <div class="form-inputs">
+      <%= f.input :Lastname,
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: "name" }%>
+    </div>
+  </div>
   <div class="field">
     <div class="form-inputs">
       <%= f.input :username,
