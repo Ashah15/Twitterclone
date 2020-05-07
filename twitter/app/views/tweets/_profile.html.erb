@@ -6,14 +6,14 @@
 			 	<div class="media-left">
 			 		<figure class="image is-64*64">
 
-			 			<%= gravatar_image_tag(current_user.email, size: 64, alt: current_user.name) %>
+			 			<%= gravatar_image_tag(current_user.email, size: 64, alt: current_user.Firstname) %>
 			 			
 			 		</figure>
 			 	</div>
 			 	<div class="media-content">
 			 		<div class="content">
 			 			<p>
-			 				<strong><%= current_user.name %></strong><br />
+			 				<strong><%= current_user.Firstname %></strong><br />
 			 				<small><%= current_user.username %></small>
 			 			</p>
 			 		</div>

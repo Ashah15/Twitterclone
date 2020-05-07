@@ -7,7 +7,7 @@
       <% else %>
 		<%= render 'trends' %>
 	  <% end %>
-      <%= render 'feed' %> 
+     <%= render 'feed', tweets: @tweets %> 
       <%= render 'people-to-follow' %>   
           
     </div>
